@@ -12,7 +12,7 @@ fn main() {
 
     let tids: Vec<_> = matches
         .values_of("TIDS")
-        .unwrap()
+        .expect("Expected a tid")
         .map(|v| match v.parse::<u32>() {
             Ok(pid) => pid,
             Err(_) => {
