@@ -202,8 +202,7 @@ pub struct taskstats {
     pub ac_stimescaled: __u64,
     pub cpu_scaled_run_real_total: __u64,
     pub freepages_count: __u64,
-    pub freepages_delay_total: __u64,
-    pub __unused_padding2: u128,
+    pub freepages_delay_total: __u64
 }
 
 #[cfg(test)]
